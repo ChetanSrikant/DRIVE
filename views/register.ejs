@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <title>Register</title>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+  
+
+  <!-- Form Container -->
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-lg w-full">
+      <!-- Form Header -->
+      <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6 text-center">Sign Up</h1>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 text-center">
+        Create an account to explore amazing features!
+      </p>
+
+      <!-- Form -->
+      <form action="/user/register" method="POST">
+        <!-- User Name -->
+        <div class="mb-6">
+          <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">User Name</label>
+          <input 
+            type="text" 
+            id="username" 
+            placeholder="John"
+            name="username" 
+            required 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="john.doe@example.com" 
+            name="email"
+            required 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-6">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="•••••••••" 
+            name="password"
+            required 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit" 
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+          Create Account
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
+
